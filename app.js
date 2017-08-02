@@ -1,19 +1,17 @@
   //Project2 - Pagination ("Meets Expectations")
 
-  // Global Variables
-
+ //Declare the global variables.
   var studentListing = $('.student-item')  
   var totalPages = Math.ceil(studentListing.length / 10); 
   var currentPage = 1;
 
-  // check the no. of students & pages.
+  // Check the no. of students & pages.
   console.log("The student list begins on page", currentPage); // Shows the page no. where the list begins.
   console.log("The student list contains", studentListing.length, "students and", totalPages, "pages"); //Shows the total no. of students & the total no. of pages.
 
   // Functions - There are two main functions : 1) showPage and  2) appendPageLinks  
 
   //*When the page loads, your program should hide all but the first 10 students in the list.*
-
 
   // The arguments for page number and student list. 
   function showPage(currentPage, studentListing) {  
@@ -55,6 +53,6 @@
     }); 
   }
 
-  // The functions are called.
+  // Finally, the functions are called.
   showPage(currentPage,studentListing);
   appendPageLinks(studentListing);
